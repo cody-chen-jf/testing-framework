@@ -9,12 +9,12 @@ describe('hello', function () {
 
   it('# should return testing', function () {
     expect(he.testing('hehe')).to.eq('hehe')
-    // expect(he.testing('testing')).to.eq('testing')
+    expect(he.testing('testing')).to.eq('testing')
     expect(he.testing()).to.eq('null')
   })
 
   it('# test callHello', function () {
-    expect(t.callHello(1, 2)).to.eq(4)
+    expect(t.callHello(1, 2)).to.eq(3)
   })
 
   it('# test sinon spy', function () {
